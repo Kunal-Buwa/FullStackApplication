@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          function calc()
+          {
+              var power= parseInt(document.getElementById("p").value)
+              var base= parseInt(document.getElementById("b").value)
+              var temp=1;
+              for(i=1;i<=power;i++)
+              {
+               temp= base*temp
+              }
+              document.write(temp)
+          }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter the power</td>
+            <td><input type="text" id="p"></td>
+        </tr>
+        <tr>
+            <td>Enter the base</td>
+            <td><input type="text" id="b"></td>
+        </tr>
+        <tr>
+            <td align="center"><button type="submit" onclick="calc()" > check</button></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

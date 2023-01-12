@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <Script>
+        function sum()
+        {
+            alert("hii")
+            var num = parseInt(document.getElementById("num").value)
+            var sum=0;
+            while(num>0)
+            {
+              var mod=(num%10);
+                 sum=(sum+mod);
+                num = Math.floor(num/10);
+
+            }
+            document.getElementById("mydiv").innerHTML=sum;
+            
+        }
+
+    </Script>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>Enter the number</td>
+            <td><input type="text" id=num placeholder="::::"></td>
+            <td><button type="submit" id="sum" onclick="sum()">Submit</button></td>
+        </tr>
+        <div id="mydiv">
+
+        </div>
+    </table>
+    
+</body>
+</html>

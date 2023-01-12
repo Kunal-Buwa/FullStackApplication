@@ -1,0 +1,58 @@
+<html>
+<head>
+    <Script>
+       function addition()
+       {
+           var num1=parseInt(document.getElementById("num1").value)
+           var num2=parseInt(document.getElementById("num2").value)
+           document.write(num1 + num2)
+        }
+        function substaction()
+       {
+           var num1=parseInt(document.getElementById("num1").value)
+           var num2=parseInt(document.getElementById("num2").value)
+           document.write(num1 - num2)
+        }
+        function multiplication()
+       {
+           var num1=parseInt(document.getElementById("num1").value)
+           var num2=parseInt(document.getElementById("num2").value)
+           document.write(num1 * num2)
+        }
+        function division()
+       {
+           var num1=parseInt(document.getElementById("num1").value)
+           var num2=parseInt(document.getElementById("num2").value)
+           document.write(num1 / num2)
+        }
+    </Script>
+
+</head>
+<body bgcolor="red">
+    <h1>welcome to calculator</h1>
+    <table>
+        <tr>
+            <td>enter number</td>
+            <td ><input type="number" placeholder="first number" id="num1"></td>
+        </tr>
+        <tr>
+            <td>enter number</td>
+            <td ><input type="number" placeholder="second number" id="num2"></td>
+        </tr>
+        <tr>
+            <td>
+       
+    <button type="button" onclick="addition()"> "+"</button>
+    <button type="button" onclick="substaction()">"-"</button>
+    <button type="button" onclick="multiplication()">"*"</button>
+    <button type="button" onclick="division()">"/"</button>
+
+         
+
+
+    
+
+</table>
+</body>
+
+</html>

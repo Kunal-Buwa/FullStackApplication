@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+        function calc()
+        {
+            var x =parseInt(document.getElementById("X").Value)
+            var y =parseInt(document.getElementById("Y").Value)
+
+            Answer = x^y;
+            document.write("Answer is" +Answer) 
+        }
+
+    </Script>
+</head>
+<body>
+    <table style="color: darkblue;"        border="2">
+        <tr>
+            <td>
+                <h1>Enter the value of x and y</h1>
+            </td>
+
+        </tr>
+        <tr>
+            <td><input type="text" id="X">X</td>
+
+        </tr>
+        <tr>
+  
+            <td><input type="text" id="Y">Y</td>
+        </tr>
+        <tr>
+            <td><button type="submit" onclick="calc">check</button></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

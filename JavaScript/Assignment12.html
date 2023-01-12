@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+         var arr=[]
+        function array(){
+            
+            
+        arr.push(document.getElementById("txt").value)
+      
+       
+
+        }
+        function Show()
+        {
+            
+            
+            for (var x of arr)
+        {
+            
+            document.getElementById("div").innerHTML+=x
+
+            
+        }
+        }
+    </Script>
+</head>
+<body>
+    <input type="text" id="txt" placeholder="enter the employee name" res>
+    <button type="submit" id="btn" onclick="array()">add</button>
+    <button type="button" id="show" onclick="Show()">Show</button><br>
+    
+    <div id="div"></div>
+</body>
+</html>

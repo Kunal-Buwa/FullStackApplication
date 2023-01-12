@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal()
+        {
+            alert("func call")
+            var principal=parseInt(document.getElementById("p").value)
+            var rate=parseInt(document.getElementById("r").value)
+            var tenure=parseInt(document.getElementById("t").value)
+              
+             
+            var temp=1
+            var b=(1+(rate/100));
+            alert("befor for")
+            for(var i=1;i<=tenure;i++)
+            {
+                alert("in for")
+                
+                temp=b*temp
+            
+            }
+           var CI= ((principal*temp)-principal)
+           //  document.write("Compound interest is " +CI)
+             document.getElementById("mytxt").value=CI;
+         }
+        
+
+    </script>
+</head>
+<body style="background-image: url(https://cedarfit.com/wp-content/uploads/2017/08/fitness-bank.jpg) " >
+    <table  style="font-style: oblique; ">
+        <h1>Compound interest calculator</h1>
+        <tr>
+            <td style="color: darkred;">Enter the principal :</td>
+            <td style="background-color: gray;"><input type="text" id="p"></td>
+        </tr>
+        <tr>
+            <td style="color: darkred;">Enter the rate of interest :</td>
+            <td style="background-color: gray;"><input type="text" id="r"></td>
+            <tr>
+                <td style="color: darkred;">Enter the tenure :</td>
+                <td style="background-color: gray;"><input type="text" name="t" id="t"></td>
+            </tr>
+        </tr>
+        <tr>
+            <td style="border-radius: 0px;"><button type="submit" onclick="cal()"> Check</button></td>
+        </tr>
+    </table>
+    <div id="mydiv">
+
+    </div>
+    <table style="font-style: oblique;">
+        <tr>
+         <td>
+             Compound Intrest : <input type="text" id="mytxt">
+         </td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>

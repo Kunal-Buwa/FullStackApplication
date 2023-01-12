@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <Script>
+            function showmessage(event){
+                console.log(event);
+                window.alert("hello world")
+                
+            }
+            function showconfirm(event){
+                
+                var ans=confirm("do you want to continue")
+                if(ans){("you selected "+ans)
+                }
+                else{
+                    alert("you selected cancel button" +ans)
+                }
+            }   
+            function showaddition()
+            {
+                num1= prompt("enter 1st number")
+                num2= prompt("enter 2nd number")
+                addtion= parseInt(num1) + parseInt(num2);
+                alert("addition:  " +addtion);
+            }   
+                
+            
+        </Script>
+
+    </head>
+    <body>
+        <script>
+            console.log(window.location);
+            document.write("Hello world!!");
+        </script>
+        <button type="button" name="btn" onclick="showmessage(event)">show mgs</button>
+        <button type="button" name="btn" onclick="showconfirm(event)">show confirm</button>
+        <button type="button" name="btn" onclick="showaddition()">show addition</button>
+    
+    </body>
+</html>
